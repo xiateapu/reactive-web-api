@@ -8,7 +8,6 @@ import com.axell.reactive.servicedto.request.AddBookRequest;
 import com.axell.reactive.servicedto.request.UpdateBookRequest;
 import com.axell.reactive.servicedto.response.BookResponse;
 import io.reactivex.observers.TestObserver;
-import io.reactivex.subscribers.TestSubscriber;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;
@@ -17,15 +16,12 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
-import rx.observers.AssertableSubscriber;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
